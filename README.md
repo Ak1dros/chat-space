@@ -4,8 +4,8 @@
 
 |column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
-|email|text|null: false|
+|name|text|null: false, unique: true|
+|email|text|null: false unique, true|
 |password|text|null: false|
 
 ### Association
@@ -29,7 +29,7 @@
 |column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|text|nothing|
+|image|text|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
